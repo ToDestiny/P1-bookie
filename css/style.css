@@ -1,0 +1,205 @@
+/* Base */
+
+@media all {
+  /* Activation de box-sizing */
+  .box {
+    box-sizing: border-box; /* Opera/IE 8+ */
+    -moz-box-sizing: border-box; /* Firefox, autres Gecko */
+    -webkit-box-sizing: border-box; /* Safari/Chrome, autres WebKit */
+  }
+
+  * {
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  h1,
+  h2,
+  p {
+    font-family: "Raleway", sans-serif;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Layout */
+
+/* PC */
+@media (min-width: 992px) {
+  .navigation-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: auto;
+    height: 120px;
+    margin: 0 50px 0 50px;
+    background-color: white;
+  }
+
+  .logo {
+    height: 120px;
+    width: 200px;
+    padding: 50px 50px 30px 10px;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 120px;
+    width: 100%;
+    margin: 0 30px 0 800px;
+  }
+
+  .menu li {
+    height: 150px;
+    width: 50%;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 70px;
+    list-style-type: none;
+  }
+
+  .menu li:hover {
+    border-top: 5px solid #0065fc;
+    padding-top: 65px;
+  }
+
+  .menu li:hover a {
+    color: #0065fc;
+  }
+
+  h1 {
+    font-size: 22px;
+    margin-left: 60px;
+  }
+
+  h2 {
+    font-size: 16px;
+    font-weight: normal;
+    margin-left: 60px;
+  }
+}
+
+/* Tablette */
+@media (min-width: 768px) and (max-width: 992px) {
+  .navigation-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: auto;
+    height: 120px;
+    margin: 0 50px 0 50px;
+    background-color: white;
+  }
+
+  .logo {
+    height: 120px;
+    width: 200px;
+    padding: 50px 50px 30px 10px;
+  }
+
+  .menu {
+    background-color: blue;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 120px;
+    width: 100%;
+    margin: 0 30px 0 800px;
+  }
+
+  .menu li {
+    height: 150px;
+    width: 50%;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 70px;
+    list-style-type: none;
+  }
+
+  .menu li:hover {
+    border-top: 5px solid #0065fc;
+    padding-top: 65px;
+  }
+
+  .menu li:hover a {
+    color: #0065fc;
+  }
+
+  h1 {
+    font-size: 22px;
+    margin-left: 60px;
+  }
+
+  h2 {
+    font-size: 16px;
+    font-weight: normal;
+    margin-left: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navigation-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logo {
+    height: 50px;
+    width: 100px;
+  }
+
+  .menu {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .menu li {
+    height: 80px;
+    width: 50%;
+    text-align: center;
+    padding-top: 40px;
+    list-style-type: none;
+    border-bottom: 5px solid #f2f2f2;
+  }
+
+  .menu li a {
+    font-size: 16px;
+    height: 80px;
+    width: 50%;
+    text-align: center;
+    vertical-align: middle;
+  }
+  .menu li:hover {
+    border-bottom: 5px solid #0065fc;
+  }
+
+  .menu li:hover a {
+    color: #0065fc;
+  }
+
+  h1 {
+    margin: 30px 30px 0 20px;
+    font-size: 22px;
+  }
+
+  h2 {
+    margin: 20px 0 0 20px;
+    font-size: 16px;
+    font-weight: normal;
+  }
+}
+
+/* Module */
+/* State */
+/* Theme */
