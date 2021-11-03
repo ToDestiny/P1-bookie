@@ -23,7 +23,6 @@
 						<li><a href="#">Hébergements</a></li>
 						<li><a href="#">Activités</a></li>
 					</ul>
-
 				</nav>
 		<h1>Trouvez votre hébergement pour des vacances de rêve</h1>
 		<h2>En plein centre ville ou en pleine nature</h2>
@@ -34,7 +33,14 @@
 		<form class="search_form" method="post" action="traitement.php">
 			<p><input id="Search" type="search" name="q" placeholder="Marseille, France" id="search_city" /></p>
 		</form>
-		<input type="submit" class="search_btn" value="Rechercher" />
+		<div>
+			<div class="search_icn">
+				<i class="fas fa-search fa-lg search_icon_mobile "></i>
+				<input type="submit" class="search_btn search_display" value="" />
+			</div>
+			<input type="submit" class="search_btn search_mobile" value="Rechercher" />
+
+		</div>	
 	</div>
 		<!--brand icon-->
 </body>
