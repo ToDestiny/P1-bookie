@@ -29,6 +29,78 @@ a {
 
 /* Layout */
 
+/* Filters */
+.s_filters {
+  height: 100px;
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 60px;
+}
+
+.p_fil {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+  width: fit-content;
+  font-size: 18px;
+  color: black;
+  font-weight: bold;
+  padding-top: 10px;
+}
+
+.filters {
+  height: 50%;
+  width: 100%;
+  margin-left: 10px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.filter {
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  width: fit-content;
+  font-size: 20px;
+  color: black;
+  font-weight: bold;
+  border: 3px solid #f2f2f2;
+  border-radius: 50px;
+  margin-left: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.filter a {
+  font-size: 18px;
+  width: fit-content;
+}
+
+.fa-money-bill-wave,
+.fa-child,
+.fa-dog,
+.fa-heart {
+  margin-left: -5px;
+  padding: 15px 5px 5px 15px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  color: #0065fc;
+  background-color: #deebff;
+}
+
+.pad_icons {
+  padding-right: 20px;
+  margin-left: 15px;
+}
+
 /* PC */
 @media (min-width: 992px) {
   /* Navigation bar */
@@ -399,6 +471,16 @@ a {
     margin-top: 25px;
     margin-left: 15px;
     color: white;
+  }
+
+  /* Filters */
+  .s_filters {
+    flex-wrap: wrap;
+  }
+
+  .filters {
+    margin-left: -20px;
+    justify-content: start;
   }
 }
 
