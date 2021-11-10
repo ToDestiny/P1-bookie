@@ -194,7 +194,7 @@
 
   .mcard {
     height: 125px;
-    width: 350px; /*1*/
+    width: 340px; /*1*/
     display: flex;
     justify-content: space-between;
     margin: 0px auto; /*2*/
@@ -547,6 +547,21 @@
   .search-icn {
     display: none;
   }
+
+  .main-div {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .cards-containers {
+    width: 80%;
+  }
+
+  .most-popular {
+    width: 70%;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -692,6 +707,39 @@
   /* Card section */
   .card {
     width: 320px;
+  }
+
+  .main-div {
+    margin: 0;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .cards-containers {
+    background-color: white;
+    margin: 0;
+    width: 100%;
+  }
+
+  .most-popular {
+    margin: 0;
+    width: 100%;
+  }
+
+  .mp-title {
+    padding: 0;
+  }
+  .card-h1 {
+    margin-left: 0;
+  }
+
+  .fa-chart-line {
+    margin: 20px 0 0 0px;
+  }
+
+  .mcard {
+    margin-top: 10px;
   }
 }
 
