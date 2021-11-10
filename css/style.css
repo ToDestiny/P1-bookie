@@ -127,8 +127,9 @@
 
   /* Card Section */
   .card {
-    width: 220px; /*1*/
+    width: 250px; /*1*/
     margin: 0px auto; /*2*/
+    margin-top: 30px;
     background-color: white; /*3*/
     box-shadow: 0px 5px 20px #999; /*4*/
     border: 5px solid white;
@@ -192,8 +193,8 @@
   }
 
   .mcard {
-    height: 120px;
-    width: 320px; /*1*/
+    height: 125px;
+    width: 350px; /*1*/
     display: flex;
     justify-content: space-between;
     margin: 0px auto; /*2*/
@@ -201,6 +202,8 @@
     box-shadow: 0px 5px 20px #999; /*4*/
     border: 5px solid white;
     border-radius: 10px 10px 10px 10px;
+    margin-top: 30px;
+    margin-bottom: 5px;
   }
 
   .a-card {
@@ -228,6 +231,11 @@
     transition-timing-function: ease;
   }
 
+  .mcard:hover .mcard-image img {
+    /*6*/
+    width: 160%;
+  }
+
   .margin-card {
     margin-top: 5px;
     margin-left: 10px;
@@ -236,6 +244,61 @@
   .margin-icn {
     position: absolute;
     margin-top: 15px;
+  }
+
+  .main-div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  .cards-containers {
+    background-color: #f2f2f2;
+    height: fit-content;
+    width: 67%;
+    margin: 20px 10px 20px 60px;
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .most-popular {
+    background-color: #f2f2f2;
+    height: fit-content;
+    width: 33%;
+    margin: 20px 30px 20px 10px;
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .card-struc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .card-h1 {
+    margin: 0;
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+
+  .card-h2 {
+    margin: 0;
+    font-weight: bold;
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+
+  .mp-title {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 35px;
+  }
+
+  .fa-chart-line {
+    margin: 20px 0 0 20px;
   }
 }
 /* PC */
