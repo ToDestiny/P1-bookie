@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 
 <head>
 	<meta charset="utf-8" />
@@ -13,6 +13,17 @@
 		rel="stylesheet">
 <script src="https://kit.fontawesome.com/581b080686.js" crossorigin="anonymous"></script>
 	<title>Booki</title>
+	<!-- Old browser fix -->
+	<script>
+		var $buoop = { required: { e: -4, f: -3, o: -3, s: -1, c: -3 }, insecure: true, api: 2021.10 };
+		function $buo_f() {
+			var e = document.createElement("script");
+			e.src = "//browser-update.org/update.min.js";
+			document.body.appendChild(e);
+		};
+		try { document.addEventListener("DOMContentLoaded", $buo_f, false) }
+		catch (e) { window.attachEvent("onload", $buo_f) }
+	</script>
 </head>
 
 <body>
@@ -32,7 +43,7 @@
 		<section class="search-div">
 			<p class="search-icon"><i class="fa-solid fa-location-dot fa-lg"></i></p>
 			<form class="search-form" method="post" action="traitement.php">
-				<p><input id="Search" type="search" name="q" placeholder="Marseille, France" id="search_city" /></p>
+				<p><input class="search" type="search" name="q" placeholder="Marseille, France" id="search_city" /></p>
 			</form>
 			<div>
 				<div class="search-icn">
@@ -54,7 +65,7 @@
 		</section>
 		<section class="disclaimer">
 			<i class="fas fa-info fa-xs"></i>
-			<h2 class="h2-disclaimer">Plus de 500 logements sont disponibles dans cette ville</>
+			<h2 class="h2-disclaimer">Plus de 500 logements sont disponibles dans cette ville</h2>
 		</section>
 
 		<article class="main-div">
@@ -256,19 +267,96 @@
 				</div>
 			</section>
 		</article>
+
+		<article class="activities">
+			<h1>Activités à Marseille</h1>
+			<div class="acti-box">
+				<div class="acti">
+					<!-- <a class="a-card" href="#">
+						<div class="acti-image"><img src="images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
+								alt="Vieux Port" /></div>
+							<div class="card-title">
+								<h3>Vieux Port</h3>
+							</div>
+						</div>
+					</a> -->
+				</div>
+				<div class="acti">
+					<!-- <a class="a-card" href="#">
+						<div class="acti-image"><img src="images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
+								alt="Vieux Port" /></div>
+							<div class="card-title">
+								<h3>Vieux Port</h3>
+							</div>
+						</div>
+					</a> -->
+				</div>
+				<div class="acti">
+										<!-- <a class="a-card" href="#">
+											<div class="acti-image"><img src="images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
+													alt="Vieux Port" /></div>
+											<div class="card-title">
+												<h3>Vieux Port</h3>
+											</div>
+											</div>
+										</a> -->
+				</div>
+				<div class="acti">
+										<!-- <a class="a-card" href="#">
+											<div class="acti-image"><img src="images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
+													alt="Vieux Port" /></div>
+											<div class="card-title">
+												<h3>Vieux Port</h3>
+											</div>
+											</div>
+										</a> -->
+				</div>
+				<div class="acti">
+										<!-- <a class="a-card" href="#">
+											<div class="acti-image"><img src="images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
+													alt="Vieux Port" /></div>
+											<div class="card-title">
+												<h3>Vieux Port</h3>
+											</div>
+											</div>
+										</a> -->
+				</div>
+				<div class="acti">
+										<!-- <a class="a-card" href="#">
+											<div class="acti-image"><img src="images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
+													alt="Vieux Port" /></div>
+											<div class="card-title">
+												<h3>Vieux Port</h3>
+											</div>
+											</div>
+										</a> -->
+				</div>
+			</div>
+		</article>
 	</main>
+	<footer>
+		<div>
+			<h3>A propos</h3>
+			<ul>
+				<li>Fonctionnement du site</li>
+				<li>Conditions générales de vente</li>
+				<li>Données et confidentialité</li>
+			</ul>
+		</div>
+		<div>
+			<h3>Nos hébergements</h3>
+			<ul>
+				<li>Charte qualité</li>
+				<li>Soumettre votre hôtel</li>
+			</ul>
+		</div>
+		<div>
+			<h3>Assistance</h3>
+			<ul>
+				<li>Centre d'aide</li>
+				<li>Nous contacter</li>
+			</ul>
+		</div>
+	</footer>
 </body>
-
-<!-- Old browser fix -->
-<script>
-	var $buoop = { required: { e: -4, f: -3, o: -3, s: -1, c: -3 }, insecure: true, api: 2021.10 };
-	function $buo_f() {
-		var e = document.createElement("script");
-		e.src = "//browser-update.org/update.min.js";
-		document.body.appendChild(e);
-	};
-	try { document.addEventListener("DOMContentLoaded", $buo_f, false) }
-	catch (e) { window.attachEvent("onload", $buo_f) }
-</script>
-
 </html>
