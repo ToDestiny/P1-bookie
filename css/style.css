@@ -1,6 +1,12 @@
 /* Base */
 
 @media all {
+  html,
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
   /* Activation de box-sizing */
   .box {
     box-sizing: border-box; /* Opera/IE 8+ */
@@ -100,6 +106,10 @@
   .pad-icons {
     padding-right: 20px;
     margin-left: 15px;
+  }
+
+  .pad-icons:hover {
+    color: #0065fc;
   }
 
   /* Disclaimer Section */
